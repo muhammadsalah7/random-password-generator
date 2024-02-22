@@ -107,3 +107,13 @@ hr {
     overflow: auto;
   }
 }
+.copied {
+  /* Initially hidden */
+  font-size: small;
+  padding: 5px;
+  margin-left: 20px;
+  color: green; /* Success color */
+  float: right;
+  top: px; /* Adjust positioning as needed */
+  right: 0px; /* Aligns to right side */
+}
