@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Karla:wght@800&display=swap");
+
+:root {
+  --primary-color-base: #10b981;
+  --bodyColor: #1c1c1c;
+  --container: #1f2937;
+  --grey-700: #273549;
+  --grey-600: #d5d4d8;
+  --white: #fff;
+  --heading: "Karla", sans serif;
+  --body: "Inter", sans serif;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bodyColor);
+}
+.container {
+  background-color: var(--container);
+  padding: 48px;
+  margin: 48px;
+}
+h1 {
+  font-family: var(--heading);
+  font-size: 40px;
+  color: var(--white);
+  margin: 0;
+}
+
+span {
+  color: var(--primary-color-base);
+}
+p {
+  font-size: 20px;
+  font-family: var(--body);
+  margin: 0;
+  margin-top: 12px;
+  margin-bottom: 48px;
+  color: var(--grey-600);
+}
+#myNumberInput {
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  margin-right: 16px;
+
+  background-color: var(--white);
+}
+button {
+  padding: 12px;
+  border-radius: 6px;
+  background: var(--primary-color-base);
+  color: var(--white);
+  font-family: var(--body);
+  border: none;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  display: inline-flex;
+  height: 100%;
+}
+button > img {
+  margin-right: 8px;
+}
+hr {
+  background: var(--grey-700);
+  height: 1px;
+  border: none;
+}
+.inputs {
+  display: flex;
+}
+.passwords-results {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 0px;
+}
+.password {
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 8px 0;
+  font-family: var(--body);
+  color: var(--primary-color-base);
+  background: var(--grey-700);
+  border-radius: 6px;
+  justify-content: center;
+  text-align: center;
+}
+.generate-class {
+  margin-bottom: 18px;
+}
+@media (max-width: 768px) {
+  .inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  input {
+    margin-bottom: 12px;
+    width: 55%;
+  }
+  .passwords-results {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+  }
+}
